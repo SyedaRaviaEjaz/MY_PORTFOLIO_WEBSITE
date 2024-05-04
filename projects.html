@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #about1{
+            padding: 80px 0;
+            color: rgb(201, 112, 149);
+            font-style: bold;
+            background-image: url(bbbb.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        /* Style for the back button */
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .back-button a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .about-col-1{
+            flex-basis:35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .about-col-1 img{
+            width: 100%;
+            height: 90%;
+            border-radius: 30px;
+        }
+        .about-col-2{
+            flex-basis: 60%;
+            margin-left: 0;
+        }
+        .sub-title{
+            font-size: 60px;
+            font-weight: 600;
+            color:rgb(2, 2, 2);
+            font-family:'Verdana';
+            margin-bottom: 10%;
+        }
+        /* Rest of your existing styles */
+        /* ... (copy and paste your existing styles here) ... */
+    </style>
+</head>
+<body>
+<div id="about1">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="hehe2.jpg">
+            </div>
+            <div class="about-col-2">
+                <br><h1 class="sub-title">Projects</h1>
+                <h2>Following are some of the projects that I have done:</h2>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">C</p>
+                    <p class="tab-links" onclick="opentab('experience')">C++</p>
+                    <p class="tab-links" onclick="opentab('education')">Javascript</p>
+                    <p class="tab-links" onclick="opentab('projectsss')">Python</p>
+                    <p class="tab-links"></p>
+                </div>          
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Timetable Management System</span><br>Built a timetable manager for teachers and students in C language that would automate record keeping</li>
+                        <li><span>Unix Shell Scripting</span><br>Came up with user-friendly commands in Linux using shell scripting concepts learned through the course of Operating Systems</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Patterned Motion Sensing Door Lock using Arduino</span><br>Built an automatic door security system using Arduino UNO where a circuit compares the knock patterns with pre-coded patterns</li>
+                        <li><span>Hospital Management System</span><br>Designed a console based hospital records management system in C++ language along with additional security features</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                       <li><span>Food Heaven</span><br>Built a complete web app using HTML/CSS and Javascript on Frontend and PHP/ SQL Database on backend.</li><br><br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="projectsss">
+                    <ul>
+                        <li><span>Facial Emotion Detection using Facial Expressions</span><br>Built a face emotion recognition system using CNN model emotion of a person are classified as happiness, neutral, sadness, anger, etc</li>
+                        <li><span>Predictive Analysis of Criminal Records</span><br>Perform data analysis on the criminal record dataset and extract meaningful insights from it about criminal behavior</li>
+                        <li><span>Hand written Digit Recognition System</span><br>Built a digit classifier using neural network which will detect the digit in the images</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button to go back to the main page -->
+        <div class="back-button">
+            <a href="main.html">Back to Home</a>
+        </div>
+    </div>
+</div>  
+
+<script src="script.js"></script>
+</body>
+</html>

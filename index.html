@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li> 
+                <li><a href="courses.html">Courses</a></li>
+
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span><br>Syeda Ravia Ejaz</span></h1>
+            <p>BS-CS Student and ML Research Assistant</p>
+        </div>
+    </div>
+</div> 
+<!-------------about--------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="para"> 👋 Hi there! I'm Syeda Ravia Ejaz, a Computer Science Student & ML Research Assistant with a strong interest for the world of AI, computer vision and creativity. 🌟
+                    
+                    🎓 Currently pursuing my Bachelors in Computer Science, I'm dedicated to expanding my knowledge and skills in this dynamic field.
+                    🚀 As I navigate through my academic journey and explore the realms of technology and creativity, I'm always eager to connect with fellow enthusiasts, professionals, and mentors who share my passion. 🌐</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links"></p>
+                </div>          
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>C/C++/Java/Python</li>
+                        <li><span>Web Development</span><br>HTML/CSS/JS</li>
+                        <li><span>Machine Learning</span><br>Python,Keras,Tensorflow, Pytorch</li>
+                        <li><span>Research and Development</span><br>Artifical Intelligence</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Research Assistant</span><br>FAST-NUCES</li>
+                        <li><span>Content Co-Lead</span><br>GDSC</li>
+                        <li><span>Teaching Assistant DLP</span><br>FAST MUCES</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>BS-CS</span><br>FAST-NUCES(2020-2024)</li>
+                        <li><span>Higher Secondary Education HSC</span><br>St. Lawrence Govt College(2018-2020)</li>
+                        <li><span>Secondary Education SSC</span><br>Mama Baby Care School(2010-2018)</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+</div>  
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
